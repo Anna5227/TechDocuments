@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PluseVibe - Каталог</title>
+    <link rel="stylesheet" href="./catalog.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>PluseVibe</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="./catalog.html" class="active"><i class="fas fa-store"></i> Каталог</a></li>
+                <li><a href="./about.html"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                <li><a href="./registration.html"><i class="fas fa-user"></i> Регистрация</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="catalog-header">
+        <h1>Каталог игр</h1>
+        <div class="catalog-controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Поиск игр...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-controls">
+                <select id="genreFilter">
+                    <option value="all">Все жанры</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="rpg">RPG</option>
+                    <option value="horror">Horror</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="rating">По рейтингу</option>
+                    <option value="price-asc">По цене (возр.)</option>
+                    <option value="price-desc">По цене (убыв.)</option>
+                    <option value="name">По названию</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog-grid" id="catalogGrid">
+        <!-- Карточки игр будут загружены через JavaScript -->
+    </section>
+
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <span class="modal-close"></span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-rating">
+                        <span id="modalRating"></span>
+                        <span class="stars"></span>
+                    </div>
+                    <div class="modal-price">
+                        <span id="modalPrice"></span>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PluseVibe</h4>
+                <p>Лучшие игры для настоящих геймеров</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-envelope"></i> support@plusevibe.com</p>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 PluseVibe. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

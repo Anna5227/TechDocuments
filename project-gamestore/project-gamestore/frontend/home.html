@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PluseVibe - Главная</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>PluseVibe</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="./catalog.html"><i class="fas fa-store"></i> Каталог</a></li>
+                <li><a href="./about.html"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                <li><a href="./registration.html"><i class="fas fa-user"></i> Регистрация</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать в PluseVibe</h1>
+            <p>Лучшие игры по лучшим ценам!</p>
+            <a href="./catalog.html" class="btn-primary">Перейти в каталог</a>
+        </div>
+    </section>
+
+     <section class="slider-section">
+        <h2>Популярные игры</h2>
+        <div class="slider-container">
+            <div class="slider" id="mainSlider">
+                <div class="slider-track">
+                    <!-- Слайд 1 -->
+                    <div class="slide">
+                        <img src="/images/spiderman.jpg" alt="Spider-Man Remastered" onerror="this.src='https://via.placeholder.com/1200x500/1a1a2e/ffd700?text=Spider-Man'">
+                        <div class="slide-content">
+                            <h3>Spider-Man Remastered</h3>
+                            <p>Станьте Человеком-пауком в захватывающем приключении по Нью-Йорку</p>
+                        </div>
+                    </div>
+                    <!-- Слайд 2 -->
+                    <div class="slide">
+                        <img src="/images/tlou2.jpg" alt="The Last of Us Part II" onerror="this.src='https://via.placeholder.com/1200x500/1a1a2e/ffd700?text=The+Last+of+Us'">
+                        <div class="slide-content">
+                            <h3>The Last of Us Part II</h3>
+                            <p>Эмоциональное путешествие в постапокалиптическом мире</p>
+                        </div>
+                    </div>
+                    <!-- Слайд 3 -->
+                    <div class="slide">
+                        <img src="/images/godofwar.jpg" alt="God of War Ragnarök" onerror="this.src='https://via.placeholder.com/1200x500/1a1a2e/ffd700?text=God+of+War'">
+                        <div class="slide-content">
+                            <h3>God of War Ragnarök</h3>
+                            <p>Продолжение эпической саги о Кратосе и Атрее в скандинавских мифах</p>
+                        </div>
+                    </div>
+                    <!-- Слайд 4 -->
+                    <div class="slide">
+                        <img src="/images/horizon.jpg" alt="Horizon Zero Dawn" onerror="this.src='https://via.placeholder.com/1200x500/1a1a2e/ffd700?text=Horizon'">
+                        <div class="slide-content">
+                            <h3>Horizon Zero Dawn</h3>
+                            <p>Исследуйте мир, населённый механическими существами</p>
+                        </div>
+                    </div>
+                    <!-- Слайд 5 -->
+                    <div class="slide">
+                        <img src="/images/uncharted.jpg" alt="Uncharted 4" onerror="this.src='https://via.placeholder.com/1200x500/1a1a2e/ffd700?text=Uncharted'">
+                        <div class="slide-content">
+                            <h3>Uncharted 4: A Thief's End</h3>
+                            <p>Финальное приключение Нейтана Дрейка в поисках сокровищ</p>
+                        </div>
+                    </div>
+                    <!-- Слайд 6 -->
+                    <div class="slide">
+                        <img src="/images/ведьмак.jpg" alt="Ведьмак 3" onerror="this.src='https://via.placeholder.com/1200x500/1a1a2e/ffd700?text=Ведьмак'">
+                        <div class="slide-content">
+                            <h3>Ведьмак 3: Дикая Охота</h3>
+                            <p>Станьте Геральтом из Ривии в эпической RPG с открытым миром</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Почему выбирают нас?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-crown"></i>
+                <h3>Только лицензионные игры</h3>
+                <p>Гарантируем подлинность всех игр в нашем каталоге</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tags"></i>
+                <h3>Лучшие цены</h3>
+                <p>Регулярные скидки и специальные предложения</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>Поддержка 24/7</h3>
+                <p>Наша команда всегда готова помочь вам</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Мгновенная доставка</h3>
+                <p>Получайте ключи для игр сразу после оплаты</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PluseVibe</h4>
+                <p>Лучшие игры для настоящих геймеров</p>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-envelope"></i> support@plusevibe.com</p>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> 2026 PluseVibe. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
